@@ -1,0 +1,14 @@
+{
+    "notes": [
+        {
+            "id": 1,
+            "title": "note1",
+            "author": "alin"
+        },
+        {
+            "id": 2,
+            "title": "note2",
+            "author": "mary"
+        }
+    ]
+}
