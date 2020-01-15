@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Love page</title>
+		<title>Cute To-DO List</title>
 		<meta charset="utf-8">
-        <link rel="stylesheet" href="/style.css" type="text/css">
+		<link rel="stylesheet" href="/style.css" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
 	</head>
 	
 	<body>
-		<div class="container">
-	<h1>Add a to-do</h1>
-	<img src="add32.png">
+		<div class="container">			
+	
+			<h1>Add a to-do
+				<img src="add32.png">
+			</h1>
+	
+	<form method="POST" action="http://localhost:3001/notes">
+		<input type="text"  placeholder="What do you need to do?">
+	</form>
+	<ul>
+		<%=	console.log(listToUpload); %>
+		<% listToUpload.forEach(function(item){ %>
+		<%= console.log(item.title);%>
+		
+		<li> <%=		item.title	%>    </li>
+										<% }); %>
+	
+	</ul>
+	
 		</div>
 	</body>
 </html>

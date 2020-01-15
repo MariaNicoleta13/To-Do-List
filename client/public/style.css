@@ -1,6 +1,59 @@
 html{
-    background: linear-gradient(to right ,#141e30, #243b55);
+    /* background: linear-gradient(to right ,#141e30, #243b55); */
+    /* background: linear-gradient(to right ,#009FFF, #FF0099); */
+    background-color: #589fa3;
 }
 h1{
-    color:green;
+    color:black;
+    background-color: #637779;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    /* color:#82b5ac; */
+    color:#83c9c7;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+ul{
+    padding: 0;
+    /* background-color: #2AA1AF; */
+    background-color: #cbdbe9;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Quicksand', sans-serif; */
+    font-family: 'Courgette', cursive;
+}
+li{
+   text-indent: 2rem;
+   padding-top:1% ;
+}
+li:nth-of-type(even){
+    /* background-color: #104558; */
+    background-color: #85a3a3;
+}
+
+
+
+h1{
+    margin: 0;
+    border-radius: 15px 15px 0 0;
+}
+.container{
+    width: 20%;  /* merge sa fie pe centru pana la 988px latime*/
+    margin:0 auto;
+    
+
+}
+img{
+    float:right;
+}
+input{
+    width: 100%;
+    /* border-top: 1px solid rgba(0, 0, 0, 0); */
+    background-color: rgb(179, 194, 204);
+    box-sizing: border-box;
+    outline: none; 
+    text-indent: 2.5rem;  
+    font-family: 'Lobster', cursive;
+    font-size: large;
+    color:#928DAB;
 }

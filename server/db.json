@@ -1,14 +1,29 @@
 {
-    "notes": [
-        {
-            "id": 1,
-            "title": "note1",
-            "author": "alin"
-        },
-        {
-            "id": 2,
-            "title": "note2",
-            "author": "mary"
-        }
-    ]
+  "notes": [
+    {
+      "id": 1,
+      "title": "cartofi",
+      "author": "alin"
+    },
+    {
+      "id": 2,
+      "title": "apa",
+      "author": "mary"
+    },
+    {     
+      "id": 3,
+      "title":"patrunjel",
+      "author":"alin"
+    },
+    {     
+      "id": 4,
+      "title":"Nisip pisici cu miros de levantica",
+      "author":"mary"
+    },
+    {     
+      "id": 5,
+      "title":"unt",
+      "author":"alin"
+    }
+  ]
 }
