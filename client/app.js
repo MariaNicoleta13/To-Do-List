@@ -13,7 +13,6 @@ app.get('/', function(req, res) {
                 message: err
             });
         }
-        console.log(items);
         res.render('index.ejs', { listToUpload: items });
     });
 });
