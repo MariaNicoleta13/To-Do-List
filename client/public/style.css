@@ -23,15 +23,31 @@ ul{
     font-family: 'Courgette', cursive;
 }
 li{
-   text-indent: 2rem;
+   /* text-indent: 2rem; */
    padding-top:1% ;
+   padding-bottom: 1%;
+   font-size: large;
+  
 }
 li:nth-of-type(even){
     /* background-color: #104558; */
     background-color: #85a3a3;
 }
+.deleteImg{
+    padding-right: 2%;
+    padding-left: 2%;
+    display:inline-block;
+    height: 90%;
+    width: 0;
+}
+li:hover .deleteImg{
+    width: auto;
+}
 
-
+.hovereff{
+   
+    width: auto;
+}
 
 h1{
     margin: 0;
@@ -43,7 +59,7 @@ h1{
     
 
 }
-img{
+img.add{
     float:right;
 }
 input{
@@ -56,4 +72,9 @@ input{
     font-family: 'Lobster', cursive;
     font-size: large;
     color:#928DAB;
+    border:3px solid rgba(0, 0, 0, 0);
+}
+.done{
+    text-decoration: line-through;
+    color:#088778;
 }

@@ -6,28 +6,33 @@
 		<link rel="stylesheet" href="/style.css" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+		
+		
 	</head>
 	
 	<body>
 		<div class="container">			
 	
 			<h1>Add a to-do
-				<img src="add32.png">
+				<img src="add32.png" class="add">
 			</h1>
+			
 	
 	<form method="POST" action="http://localhost:3001/notes">
-		<input type="text"  placeholder="What do you need to do?">
+		<input type="text"  placeholder="What do you need to do?" id="textbox">
 	</form>
 	<ul>
-		<%=	console.log(listToUpload); %>
+		<!-- <%=	console.log(listToUpload); %> -->
 		<% listToUpload.forEach(function(item){ %>
-		<%= console.log(item.title);%>
-		
-		<li> <%=		item.title	%>    </li>
+		<!-- <%= console.log(item.title);%> -->		
+		<li class="hover"> <span><img class="deleteImg" src="/shield-min.png"></span>
+			<%=		item.title	%>    </li>
 										<% }); %>
 	
 	</ul>
 	
 		</div>
+		<script src="/index.js"></script>
 	</body>
 </html>
