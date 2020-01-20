@@ -6,10 +6,16 @@ img.click(function(){
 $("input[type='text']").keypress(function(event){
     if(event.which=="13"){
         var text=$(this).val();
-        $(this).val('');
-        $('ul').append(
-            '<li>'+'<span><img class="remove" src="/shield-min.png" ></span>' +text+ '</li>'
-        );
+        
+        $.post("/api/items", {title: text},function(result){
+            //TODO handle errors
+            // clear the textbox
+            $(this).val(''); 
+            $('ul').append(
+                '<li>'+'<span><img class="remove" src="/shield-min.png" ></span>' +text+ '</li>'
+            );
+        });
+       
     }
 });
 
