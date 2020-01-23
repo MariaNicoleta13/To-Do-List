@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Cute To-DO List</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="/style.css" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
-		
-		
-	</head>
-	
-	<body>
-		<div class="container">			
-	
-			<h1 >Add a to-do
-				<img src="add32.png" class="add">
-			</h1>
-			
-	
-	<form>
-		<input type="text"  placeholder="What do you need to do?" id="textbox">
-	</form>
-	<ul>
-		<!-- <%=	console.log(listToUpload); %> -->
-		<% listToUpload.forEach(function(item){ %>
-		<!-- <%= console.log(item.title);%> -->		
-		<li class="hover"> <span><img class="deleteImg" src="/shield-min.png"></span>
-			<%=		item.title	%>    </li>
-										<% }); %>
-	
-	</ul>
-	
-		</div>
-		<script src="/index.js"></script>
-	</body>
+  <head>
+    <title>Cute To-DO List</title>
+    <meta
+      charset="utf-8"
+      content="width=device-width, initial-scale=1"
+      meta="viewport"
+    />
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Courgette&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        Add a to-do
+        <img src="add2.png" class="add" />
+      </h1>
+
+      <form>
+        <input type="text" placeholder="What do you need to do?" id="textbox" />
+      </form>
+      <ul>
+        <!-- <%=	console.log(listToUpload); %> -->
+        <% listToUpload.forEach(function(item){ %>
+        <!-- <%= console.log(item.title);%> -->
+        <li class="hover">
+          <div class="first">
+            <img class="deleteImg" id="<%=item.id%>" src="/shield-min.png" />
+          </div>
+          <div class="second">
+            <p><%=item.title%></p>
+          </div>
+        </li>
+        <% }); %>
+      </ul>
+    </div>
+    <script src="/index.js"></script>
+  </body>
 </html>
